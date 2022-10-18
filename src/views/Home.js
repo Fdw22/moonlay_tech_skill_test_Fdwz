@@ -1,52 +1,32 @@
 import "../App.css";
 import React, { useEffect } from "react";
 
-function Home() {
+export default function Home() {
   useEffect(() => {
     document.title =
       "Home | Moonlay Technology Skill Test | Fauzi Dzulfiqar Wibowo";
   });
   return (
-    <div class="container mx-auto px-2 pt-3 bg-slate-300 ">
-      {/* <h1 class="font-bold text-center text-2xl">
-        Moonlay Technology Skill Test
-      </h1> */}
-      {/* <div class="grid grid-cols-3 gap-4 text-center">
-        <div class="bg-gray-400 ...">01</div>
-        <div class="bg-gray-400 ...">02</div>
-        <div class="bg-gray-400 ...">03</div>
-        <div class="bg-gray-400 col-span-2 ...">04</div>
-        <div class="bg-gray-400 ...">05</div>
-        <div class="bg-gray-400 ...">06</div>
-        <div class="bg-gray-400 col-span-2 ...">07</div>
-      </div>
-
-      <div class="grid grid-rows-1 grid-flow-col gap-4">
-        <div class="bg-gray-900">01</div>
-        <div class="bg-gray-900">09</div>
-        <div class="bg-gray-900">09</div>
-        <div class="bg-gray-900">09</div>
-        <div class="bg-gray-900">09</div>
-      </div> */}
-      <div className="grid lg:grid-cols-2">
-        <div>
+    <div class="container mx-auto px-2 pt-3 bg-slate-300 h-auto md:h-screen pb-5">
+      <div className="grid grid-cols-1 lg:grid-cols-1">
+        <div class="m-auto">
           <img
             src="/FauziRounded.png"
-            class="object-contain w-auto"
+            class="object-contain w-80"
             alt="Profile Photos"
           />
         </div>
-        <div class="text-center md:text-left md:m-auto">
+        <div class="text-center md:text-center lg:text-center md:m-auto">
           <h3 class="font-light text-lg">Hello There!, my name is</h3>
           <h1 class="font-bold text-2xl">Fauzi Dzulfiqar Wibowo</h1>
-          <h3 class="font-light text-lg mt-1">
+          <h3 class="font-light text-lg mt-1 md:px-60">
             I am a energetic, hardworking individual who really love learning
             new things especially about technology. for me, making a mistake are
             more valuable than not trying at all. I also able to lead a team
             that has persistent desire about achieving big goals.
           </h3>
           <h3 class="font-bold pt-5">You can reach me on</h3>
-          <div class="mt-3 flex justify-center lg:justify-start gap-3">
+          <div class="mt-3 flex justify-center lg:justify-center gap-3">
             <div>
               <a
                 href="https://www.linkedin.com/in/fauzi-dzulfiqar-wibowo-45a655120/"
@@ -108,8 +88,8 @@ function Home() {
         </div>
       </div>
 
-      <div class="grid text-center ml-3 lg:ml-auto lg:grid-cols-3 lg:text-left gap-4 mt-5 ">
-        <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="grid text-center  md:ml-auto md:grid-cols-3 md:text-left gap-4 mt-5 pb-10">
+        <div class="p-6 max-w-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
           <a href="/planet">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Planet Module
@@ -120,7 +100,7 @@ function Home() {
             Wars Universe, at the time of 0 ABY.
           </p>
           <a
-            href="/"
+            href="/planet"
             class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Go to Planet Module
@@ -140,7 +120,7 @@ function Home() {
           </a>
         </div>
 
-        <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-6 max-w-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
           <a href="/planet">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Starship Module
@@ -151,7 +131,7 @@ function Home() {
             capability.
           </p>
           <a
-            href="/"
+            href="/starship"
             class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Go to Starship Module
@@ -171,8 +151,8 @@ function Home() {
           </a>
         </div>
 
-        <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="/planet">
+        <div class="p-6 max-w-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="/people">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               People Module
             </h5>
@@ -182,7 +162,7 @@ function Home() {
             Star Wars universe.
           </p>
           <a
-            href="/"
+            href="/people"
             class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Go to People Module
@@ -205,5 +185,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

@@ -1,2 +1,3 @@
-# moonlay_tech_skill_test_Fdwz
-Moonlay Technology Frontend Skill Test
+# Moonlay Technology - Frontend Skill Test
+
+Created by Fauzi Dzulfiqar Wibowo
